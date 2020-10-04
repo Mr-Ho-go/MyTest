@@ -38,6 +38,7 @@ public class ValidateCodeUtils {
         Random rdm = new Random();
         String hash1 = Integer.toHexString(rdm.nextInt());
         String capstr = hash1.substring(0, length);
+        // ddeiiddg
         return capstr;
     }
 }
