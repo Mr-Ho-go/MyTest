@@ -1,6 +1,8 @@
 package Sout;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -36,6 +38,37 @@ public class AboutSout {
 //        Integer age = list.get(0).getAge();//索引越界问题
 
         System.out.println("size" +size);
+
+
+
+//        Calendar cal= Calendar.getInstance();
+//        int y=cal.get(Calendar.YEAR);
+//        cal.set(Calendar.MONTH,+1);
+//        int m=cal.get(Calendar.MONTH);//实际是4月，但得到的会是3月
+//        int d=cal.get(Calendar.DATE);
+//        int h=cal.get(Calendar.HOUR_OF_DAY); //24小时制    Calendar.HOUR是12小时制
+//        int mi=cal.get(Calendar.MINUTE);
+//        int s=cal.get(Calendar.SECOND);
+//        System.out.println("现在时刻是"+y+"年"+m+"月"+d+"日"+h+"时"+mi+"分"+s+"秒");
+
+
+        Calendar cal = Calendar.getInstance();//获取一个Calendar对象
+        cal.setTime(new Date());
+        int y=cal.get(Calendar.YEAR);
+        int m=cal.get(Calendar.MONTH);  //  cal.get(Calendar.MONTH)获取的是上个月的月份数据
+        System.out.println("上月份是"+m);
+
+        cal.add(Calendar.MONTH, +1);
+        int m2=cal.get(Calendar.MONTH);  //
+        System.out.println("当月月份是"+m2);
+
+        int d=cal.get(Calendar.DATE);
+
+        System.out.println("现在时刻是"+y+"年"+m+"月"+d+"日");
+
+
+
+
 
     }
 
