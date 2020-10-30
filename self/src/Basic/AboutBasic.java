@@ -1,13 +1,15 @@
 package Basic;
 
+import java.math.BigDecimal;
+import java.text.NumberFormat;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class AboutBasic {
 
-    static int x = 25;
-
-    int y;
+//    static int x = 25;
+//
+//    int y;
 
     public static void main(String[] args) {
 
@@ -76,12 +78,48 @@ public class AboutBasic {
 //        boolean var1 = copy.contains("ere");
 
 
-        int a = 19;
-        int b = 10;
-        add(a,b);
+//        int a = 19;
+//        int b = 10;
+//        add(a,b);
+//
+//        System.out.println(x);
+//        System.out.println(a);
 
-        System.out.println(x);
-        System.out.println(a);
+
+        // BigDecimal数据类型比较
+
+//        BigDecimal b1 = new BigDecimal(1.0);
+//        BigDecimal b2 = new BigDecimal("1.0");
+//
+//        System.out.println(b1.compareTo(b2));
+//
+//
+//        NumberFormat currency = NumberFormat.getCurrencyInstance(); //建立货币格式化引用
+//        NumberFormat percent = NumberFormat.getPercentInstance();  //建立百分比格式化引用
+//        percent.setMaximumFractionDigits(3); //百分比小数点最多3位
+//
+//        BigDecimal loanAmount = new BigDecimal("15000.48"); //贷款金额
+//        BigDecimal interestRate = new BigDecimal("0.008"); //利率
+//        BigDecimal interest = loanAmount.multiply(interestRate); //相乘
+//
+//        System.out.println("贷款金额:" + currency.format(loanAmount));
+//        System.out.println("利率:" + percent.format(interestRate));
+//        System.out.println("利息:" + currency.format(interest));
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,20 +127,12 @@ public class AboutBasic {
     }
 
 
-    public static void add(int a,int b){
-        x = a + b ;
-        a = a + b ;
-
-
-    }
-
-
-
-
-
-
-
-
+//    public static void add(int a,int b){
+//        x = a + b ;
+//        a = a + b ;
+//
+//
+//    }
 
 
 
